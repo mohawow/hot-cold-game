@@ -83,8 +83,8 @@ export default class Game extends React.Component {
     return (
       <div>
         <Header
-          onRestartGame={() => this.restartGame()}
-          onGenerateAuralUpdate={() => this.generateAuralUpdate()}
+         onRestartGame={() => this.restartGame()}
+         onGenerateAuralUpdate={() => this.generateAuralUpdate()} */} */}
         />
         <main role="main">
           <GuessSection
@@ -92,7 +92,8 @@ export default class Game extends React.Component {
             guessCount={guessCount}
             onMakeGuess={guess => this.makeGuess(guess)}
           />
-          <StatusSection guesses={guesses} 
+          <StatusSection 
+            guesses={guesses} 
             auralStatus={auralStatus}
           />
           <InfoSection />
